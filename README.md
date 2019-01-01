@@ -1,5 +1,5 @@
 
-Readmoo Downloader
+Ebook Download
 ===
 
 Download your Readmoo ebooks as EPUB files.
