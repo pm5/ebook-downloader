@@ -39,8 +39,8 @@ You can skip the first three steps after the first time using the tool.
 
 ### Readmoo offers their ebooks with DRM.  This tool sidesteps the protection.  Is it ethical to release a tool like this?
 
-Like the many DeDRM tools for Amazon Kindle or other ebook services, this tool has practical uses, which is to backup the ebooks you have bought, and at the same time demonstrates a technical possibility.  Since it can only download for you the ebooks you have bought on Readmoo, you have already paid for these contents.
+Like the many DeDRM tools for Amazon Kindle or other ebook shops, this tool has practical uses, which is to backup the ebooks you have bought, and at the same time demonstrates a technical possibility.  Since it can only download for you the ebooks you have bought on Readmoo, you have already paid for these contents.
 
-Leaving the customers like you unable to backup and transfer the ebooks to other devices using open formats after buying them creates an unjust lock-in, because Readmoo does not sell their products as subscriptions.
+Leaving the customers like you unable to backup and transfer the ebooks to other devices using open formats after buying them creates an unjust lock-in, because Readmoo does not sell their products as subscriptions.  This is, however, a controversial point of view.
 
-Besides, [Kobo](https://www.kobo.com/) offers largely the same ebook titles under the same prices as Readmoo does, but gives you access to the EPUB files without DRM.  Therefore I do not believe that offering un-DRM'ed contents with reasonable prices violates the principles to publishing business.
+There are other ebook shops like [Kobo](https://www.kobo.com/) which offers largely the same ebook titles under the same prices as Readmoo does, and gives you access to the EPUB files, albeit with DRM.
