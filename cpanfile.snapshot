@@ -1,0 +1,573 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Archive-Zip-1.64
+    pathname: P/PH/PHRED/Archive-Zip-1.64.tar.gz
+    provides:
+      Archive::Zip 1.64
+      Archive::Zip::Archive 1.64
+      Archive::Zip::BufferedFileHandle 1.64
+      Archive::Zip::DirectoryMember 1.64
+      Archive::Zip::FileMember 1.64
+      Archive::Zip::Member 1.64
+      Archive::Zip::MemberRead 1.64
+      Archive::Zip::MockFileHandle 1.64
+      Archive::Zip::NewFileMember 1.64
+      Archive::Zip::StringMember 1.64
+      Archive::Zip::Tree 1.64
+      Archive::Zip::ZipFileMember 1.64
+    requirements:
+      Compress::Raw::Zlib 2.017
+      Encode 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Find 0
+      File::Path 0
+      File::Spec 0.80
+      File::Temp 0
+      IO::File 0
+      IO::Handle 0
+      IO::Seekable 0
+      Time::Local 0
+      perl 5.006
+  Devel-CheckCompiler-0.07
+    pathname: S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz
+    provides:
+      Devel::AssertC99 undef
+      Devel::CheckCompiler 0.07
+    requirements:
+      Exporter 0
+      ExtUtils::CBuilder 0
+      File::Temp 0
+      Module::Build::Tiny 0.035
+      Test::More 0.98
+      parent 0
+      perl 5.008001
+  Devel-PPPort-3.43
+    pathname: X/XS/XSAWYERX/Devel-PPPort-3.43.tar.gz
+    provides:
+      Devel::PPPort 3.43
+    requirements:
+      ExtUtils::MakeMaker 0
+  EPUB-Parser-0.07
+    pathname: T/TO/TOKUBASS/EPUB-Parser-0.07.tar.gz
+    provides:
+      EPUB::Parser 0.07
+      EPUB::Parser::File::Container undef
+      EPUB::Parser::File::Document undef
+      EPUB::Parser::File::Navi undef
+      EPUB::Parser::File::Navi::Context undef
+      EPUB::Parser::File::Navi::Context::Toc undef
+      EPUB::Parser::File::OPF undef
+      EPUB::Parser::File::OPF::Context undef
+      EPUB::Parser::File::OPF::Context::Guide undef
+      EPUB::Parser::File::OPF::Context::Manifest undef
+      EPUB::Parser::File::OPF::Context::Metadata undef
+      EPUB::Parser::File::OPF::Context::Spine undef
+      EPUB::Parser::File::Parser undef
+      EPUB::Parser::File::Parser::Container undef
+      EPUB::Parser::File::Parser::Document undef
+      EPUB::Parser::File::Parser::Navi undef
+      EPUB::Parser::File::Parser::OPF undef
+      EPUB::Parser::Manager::Pages undef
+      EPUB::Parser::Util::Archive undef
+      EPUB::Parser::Util::Archive::Iterator undef
+      EPUB::Parser::Util::AttributePacker undef
+      EPUB::Parser::Util::Context undef
+      EPUB::Parser::Util::EpubLoad undef
+      EPUB::Parser::Util::ShortcutMethod undef
+    requirements:
+      Archive::Zip 0
+      Carp 0
+      File::Slurp 0
+      IO::String 0
+      Module::Build::Tiny 0.035
+      Smart::Args 0
+      URI 0
+      XML::LibXML 0
+      XML::LibXML::XPathContext 0
+      parent 0
+      perl 5.008005
+  ExtUtils-Config-0.008
+    pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
+    provides:
+      ExtUtils::Config 0.008
+    requirements:
+      Data::Dumper 0
+      ExtUtils::MakeMaker 6.30
+      strict 0
+      warnings 0
+  ExtUtils-Helpers-0.026
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.026.tar.gz
+    provides:
+      ExtUtils::Helpers 0.026
+      ExtUtils::Helpers::Unix 0.026
+      ExtUtils::Helpers::VMS 0.026
+      ExtUtils::Helpers::Windows 0.026
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Spec::Functions 0
+      Text::ParseWords 3.24
+      perl 5.006
+      strict 0
+      warnings 0
+  ExtUtils-InstallPaths-0.012
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.012.tar.gz
+    provides:
+      ExtUtils::InstallPaths 0.012
+    requirements:
+      Carp 0
+      ExtUtils::Config 0.002
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      perl 5.006
+      strict 0
+      warnings 0
+  File-Slurp-9999.25
+    pathname: C/CA/CAPOEIRAB/File-Slurp-9999.25.tar.gz
+    provides:
+      File::Slurp 9999.25
+    requirements:
+      B 0
+      Carp 0
+      Errno 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      POSIX 0
+      strict 0
+      warnings 0
+  IO-String-1.08
+    pathname: G/GA/GAAS/IO-String-1.08.tar.gz
+    provides:
+      IO::String 1.08
+    requirements:
+      ExtUtils::MakeMaker 0
+  Module-Build-0.4224
+    pathname: L/LE/LEONT/Module-Build-0.4224.tar.gz
+    provides:
+      Module::Build 0.4224
+      Module::Build::Base 0.4224
+      Module::Build::Compat 0.4224
+      Module::Build::Config 0.4224
+      Module::Build::Cookbook 0.4224
+      Module::Build::Dumper 0.4224
+      Module::Build::Notes 0.4224
+      Module::Build::PPMMaker 0.4224
+      Module::Build::Platform::Default 0.4224
+      Module::Build::Platform::MacOS 0.4224
+      Module::Build::Platform::Unix 0.4224
+      Module::Build::Platform::VMS 0.4224
+      Module::Build::Platform::VOS 0.4224
+      Module::Build::Platform::Windows 0.4224
+      Module::Build::Platform::aix 0.4224
+      Module::Build::Platform::cygwin 0.4224
+      Module::Build::Platform::darwin 0.4224
+      Module::Build::Platform::os2 0.4224
+      Module::Build::PodParser 0.4224
+    requirements:
+      CPAN::Meta 2.142060
+      CPAN::Meta::YAML 0.003
+      Cwd 0
+      Data::Dumper 0
+      ExtUtils::CBuilder 0.27
+      ExtUtils::Install 0
+      ExtUtils::Manifest 0
+      ExtUtils::Mkbootstrap 0
+      ExtUtils::ParseXS 2.21
+      File::Basename 0
+      File::Compare 0
+      File::Copy 0
+      File::Find 0
+      File::Path 0
+      File::Spec 0.82
+      File::Temp 0.15
+      Getopt::Long 0
+      Module::Metadata 1.000002
+      Parse::CPAN::Meta 1.4401
+      Perl::OSType 1
+      Pod::Man 2.17
+      TAP::Harness 3.29
+      Test::More 0.49
+      Text::Abbrev 0
+      Text::ParseWords 0
+      perl 5.006001
+      version 0.87
+  Module-Build-Tiny-0.039
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.039.tar.gz
+    provides:
+      Module::Build::Tiny 0.039
+    requirements:
+      CPAN::Meta 0
+      DynaLoader 0
+      Exporter 5.57
+      ExtUtils::CBuilder 0
+      ExtUtils::Config 0.003
+      ExtUtils::Helpers 0.020
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0.002
+      ExtUtils::ParseXS 0
+      File::Basename 0
+      File::Find 0
+      File::Path 0
+      File::Spec::Functions 0
+      Getopt::Long 2.36
+      JSON::PP 2
+      Pod::Man 0
+      TAP::Harness::Env 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Module-Build-XSUtil-0.19
+    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.19.tar.gz
+    provides:
+      Module::Build::XSUtil 0.19
+    requirements:
+      Devel::CheckCompiler 0
+      Devel::PPPort 0
+      Exporter 0
+      ExtUtils::CBuilder 0
+      File::Basename 0
+      File::Path 0
+      Module::Build 0.4005
+      XSLoader 0
+      parent 0
+      perl 5.008001
+  Mojolicious-8.10
+    pathname: S/SR/SRI/Mojolicious-8.10.tar.gz
+    provides:
+      Mojo undef
+      Mojo::Asset undef
+      Mojo::Asset::File undef
+      Mojo::Asset::Memory undef
+      Mojo::Base undef
+      Mojo::ByteStream undef
+      Mojo::Cache undef
+      Mojo::Collection undef
+      Mojo::Content undef
+      Mojo::Content::MultiPart undef
+      Mojo::Content::Single undef
+      Mojo::Cookie undef
+      Mojo::Cookie::Request undef
+      Mojo::Cookie::Response undef
+      Mojo::DOM undef
+      Mojo::DOM::CSS undef
+      Mojo::DOM::HTML undef
+      Mojo::Date undef
+      Mojo::DynamicMethods undef
+      Mojo::EventEmitter undef
+      Mojo::Exception undef
+      Mojo::File undef
+      Mojo::Headers undef
+      Mojo::HelloWorld undef
+      Mojo::Home undef
+      Mojo::IOLoop undef
+      Mojo::IOLoop::Client undef
+      Mojo::IOLoop::Delay undef
+      Mojo::IOLoop::Server undef
+      Mojo::IOLoop::Stream undef
+      Mojo::IOLoop::Subprocess undef
+      Mojo::IOLoop::TLS undef
+      Mojo::JSON undef
+      Mojo::JSON::Pointer undef
+      Mojo::Loader undef
+      Mojo::Log undef
+      Mojo::Message undef
+      Mojo::Message::Request undef
+      Mojo::Message::Response undef
+      Mojo::Parameters undef
+      Mojo::Path undef
+      Mojo::Promise undef
+      Mojo::Reactor undef
+      Mojo::Reactor::EV undef
+      Mojo::Reactor::Poll undef
+      Mojo::Server undef
+      Mojo::Server::CGI undef
+      Mojo::Server::Daemon undef
+      Mojo::Server::Hypnotoad undef
+      Mojo::Server::Morbo undef
+      Mojo::Server::Morbo::Backend undef
+      Mojo::Server::Morbo::Backend::Poll undef
+      Mojo::Server::PSGI undef
+      Mojo::Server::PSGI::_IO undef
+      Mojo::Server::Prefork undef
+      Mojo::Template undef
+      Mojo::Transaction undef
+      Mojo::Transaction::HTTP undef
+      Mojo::Transaction::WebSocket undef
+      Mojo::URL undef
+      Mojo::Upload undef
+      Mojo::UserAgent undef
+      Mojo::UserAgent::CookieJar undef
+      Mojo::UserAgent::Proxy undef
+      Mojo::UserAgent::Server undef
+      Mojo::UserAgent::Transactor undef
+      Mojo::Util undef
+      Mojo::WebSocket undef
+      Mojolicious 8.10
+      Mojolicious::Command undef
+      Mojolicious::Command::Author::cpanify undef
+      Mojolicious::Command::Author::generate undef
+      Mojolicious::Command::Author::generate::app undef
+      Mojolicious::Command::Author::generate::lite_app undef
+      Mojolicious::Command::Author::generate::makefile undef
+      Mojolicious::Command::Author::generate::plugin undef
+      Mojolicious::Command::Author::inflate undef
+      Mojolicious::Command::cgi undef
+      Mojolicious::Command::daemon undef
+      Mojolicious::Command::eval undef
+      Mojolicious::Command::get undef
+      Mojolicious::Command::prefork undef
+      Mojolicious::Command::psgi undef
+      Mojolicious::Command::routes undef
+      Mojolicious::Command::version undef
+      Mojolicious::Commands undef
+      Mojolicious::Controller undef
+      Mojolicious::Lite undef
+      Mojolicious::Plugin undef
+      Mojolicious::Plugin::Config undef
+      Mojolicious::Plugin::Config::Sandbox undef
+      Mojolicious::Plugin::DefaultHelpers undef
+      Mojolicious::Plugin::EPLRenderer undef
+      Mojolicious::Plugin::EPRenderer undef
+      Mojolicious::Plugin::HeaderCondition undef
+      Mojolicious::Plugin::JSONConfig undef
+      Mojolicious::Plugin::Mount undef
+      Mojolicious::Plugin::PODRenderer undef
+      Mojolicious::Plugin::TagHelpers undef
+      Mojolicious::Plugins undef
+      Mojolicious::Renderer undef
+      Mojolicious::Routes undef
+      Mojolicious::Routes::Match undef
+      Mojolicious::Routes::Pattern undef
+      Mojolicious::Routes::Route undef
+      Mojolicious::Sessions undef
+      Mojolicious::Static undef
+      Mojolicious::Types undef
+      Mojolicious::Validator undef
+      Mojolicious::Validator::Validation undef
+      Test::Mojo undef
+      ojo undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      IO::Socket::IP 0.37
+      JSON::PP 2.27103
+      List::Util 1.41
+      Time::Local 1.2
+      perl 5.010001
+  Mouse-v2.5.6
+    pathname: S/SK/SKAJI/Mouse-v2.5.6.tar.gz
+    provides:
+      Mouse v2.5.6
+      Mouse::Exporter undef
+      Mouse::Meta::Attribute undef
+      Mouse::Meta::Class undef
+      Mouse::Meta::Method undef
+      Mouse::Meta::Method::Accessor undef
+      Mouse::Meta::Method::Constructor undef
+      Mouse::Meta::Method::Delegation undef
+      Mouse::Meta::Method::Destructor undef
+      Mouse::Meta::Module undef
+      Mouse::Meta::Role undef
+      Mouse::Meta::Role::Application undef
+      Mouse::Meta::Role::Application::RoleSummation undef
+      Mouse::Meta::Role::Composite undef
+      Mouse::Meta::Role::Method undef
+      Mouse::Meta::TypeConstraint undef
+      Mouse::Object undef
+      Mouse::PurePerl undef
+      Mouse::Role v2.5.6
+      Mouse::Spec v2.5.6
+      Mouse::TypeRegistry undef
+      Mouse::Util v2.5.6
+      Mouse::Util::MetaRole undef
+      Mouse::Util::TypeConstraints undef
+      Squirrel undef
+      Squirrel::Role undef
+      Test::Mouse undef
+      ouse undef
+    requirements:
+      ExtUtils::CBuilder 0
+      Module::Build 0.4005
+      Module::Build::XSUtil 0.19
+      Scalar::Util 1.14
+      XSLoader 0.02
+      perl 5.008005
+  PadWalker-2.3
+    pathname: R/RO/ROBIN/PadWalker-2.3.tar.gz
+    provides:
+      PadWalker 2.3
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  Smart-Args-0.14
+    pathname: T/TO/TOKUHIROM/Smart-Args-0.14.tar.gz
+    provides:
+      Smart::Args 0.14
+    requirements:
+      Exporter 5.63
+      Module::Build::Tiny 0.035
+      Mouse 0.92
+      Mouse::Util::TypeConstraints 0
+      PadWalker 1.92
+      Scalar::Util 1.21
+      perl 5.008001
+  URI-1.74
+    pathname: E/ET/ETHER/URI-1.74.tar.gz
+    provides:
+      URI 1.74
+      URI::Escape 3.31
+      URI::Heuristic 4.20
+      URI::IRI 1.74
+      URI::QueryParam 1.74
+      URI::Split 1.74
+      URI::URL 5.04
+      URI::WithBase 2.20
+      URI::data 1.74
+      URI::file 4.21
+      URI::file::Base 1.74
+      URI::file::FAT 1.74
+      URI::file::Mac 1.74
+      URI::file::OS2 1.74
+      URI::file::QNX 1.74
+      URI::file::Unix 1.74
+      URI::file::Win32 1.74
+      URI::ftp 1.74
+      URI::gopher 1.74
+      URI::http 1.74
+      URI::https 1.74
+      URI::ldap 1.74
+      URI::ldapi 1.74
+      URI::ldaps 1.74
+      URI::mailto 1.74
+      URI::mms 1.74
+      URI::news 1.74
+      URI::nntp 1.74
+      URI::pop 1.74
+      URI::rlogin 1.74
+      URI::rsync 1.74
+      URI::rtsp 1.74
+      URI::rtspu 1.74
+      URI::sftp 1.74
+      URI::sip 1.74
+      URI::sips 1.74
+      URI::snews 1.74
+      URI::ssh 1.74
+      URI::telnet 1.74
+      URI::tn3270 1.74
+      URI::urn 1.74
+      URI::urn::isbn 1.74
+      URI::urn::oid 1.74
+    requirements:
+      Carp 0
+      Cwd 0
+      Data::Dumper 0
+      Encode 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      MIME::Base64 2
+      Net::Domain 0
+      Scalar::Util 0
+      constant 0
+      integer 0
+      overload 0
+      parent 0
+      perl 5.008001
+      strict 0
+      utf8 0
+      warnings 0
+  XML-LibXML-2.0132
+    pathname: S/SH/SHLOMIF/XML-LibXML-2.0132.tar.gz
+    provides:
+      XML::LibXML 2.0132
+      XML::LibXML::Attr 2.0132
+      XML::LibXML::AttributeHash 2.0132
+      XML::LibXML::Boolean 2.0132
+      XML::LibXML::CDATASection 2.0132
+      XML::LibXML::Comment 2.0132
+      XML::LibXML::Common 2.0132
+      XML::LibXML::Devel 2.0132
+      XML::LibXML::Document 2.0132
+      XML::LibXML::DocumentFragment 2.0132
+      XML::LibXML::Dtd 2.0132
+      XML::LibXML::Element 2.0132
+      XML::LibXML::ErrNo 2.0132
+      XML::LibXML::Error 2.0132
+      XML::LibXML::InputCallback 2.0132
+      XML::LibXML::Literal 2.0132
+      XML::LibXML::NamedNodeMap 2.0132
+      XML::LibXML::Namespace 2.0132
+      XML::LibXML::Node 2.0132
+      XML::LibXML::NodeList 2.0132
+      XML::LibXML::Number 2.0132
+      XML::LibXML::PI 2.0132
+      XML::LibXML::Pattern 2.0132
+      XML::LibXML::Reader 2.0132
+      XML::LibXML::RegExp 2.0132
+      XML::LibXML::RelaxNG 2.0132
+      XML::LibXML::SAX 2.0132
+      XML::LibXML::SAX::AttributeNode 2.0132
+      XML::LibXML::SAX::Builder 2.0132
+      XML::LibXML::SAX::Generator 2.0132
+      XML::LibXML::SAX::Parser 2.0132
+      XML::LibXML::Schema 2.0132
+      XML::LibXML::Text 2.0132
+      XML::LibXML::XPathContext 2.0132
+      XML::LibXML::XPathExpression 2.0132
+      XML::LibXML::_SAXParser 2.0132
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      XML::NamespaceSupport 1.07
+      XML::SAX 0.11
+      XML::SAX::Base 0
+      XML::SAX::Exception 0
+      base 0
+      parent 0
+      perl 5.008
+      strict 0
+      vars 0
+      warnings 0
+  XML-NamespaceSupport-1.12
+    pathname: P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+    provides:
+      XML::NamespaceSupport 1.12
+    requirements:
+      ExtUtils::MakeMaker 6.17
+      constant 0
+      perl 5.006
+      strict 0
+      vars 0
+      warnings 0
+  XML-SAX-1.00
+    pathname: G/GR/GRANTM/XML-SAX-1.00.tar.gz
+    provides:
+      XML::SAX 1.00
+      XML::SAX::DocumentLocator undef
+      XML::SAX::ParserFactory 1.01
+      XML::SAX::PurePerl 1.00
+      XML::SAX::PurePerl::DebugHandler undef
+      XML::SAX::PurePerl::Exception undef
+      XML::SAX::PurePerl::Productions undef
+      XML::SAX::PurePerl::Reader undef
+      XML::SAX::PurePerl::Reader::Stream undef
+      XML::SAX::PurePerl::Reader::String undef
+      XML::SAX::PurePerl::Reader::URI undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Temp 0
+      XML::NamespaceSupport 0.03
+      XML::SAX::Base 1.05
+  XML-SAX-Base-1.09
+    pathname: G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+    provides:
+      XML::SAX::Base 1.09
+      XML::SAX::Base::NoHandler 1.09
+      XML::SAX::Exception 1.09
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008
