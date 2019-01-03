@@ -382,6 +382,8 @@ sub save_epub
     }
     $filename = Encode::decode('locale_fs', $filename);
 
+    $zip->addFile(catfile($moo->{book_id}, "mimetype"), "mimetype");
+
     foreach (keys %{$moo->{content}}) {
         $zip->addFile(catfile($moo->{book_id}, $_), $_);
     }
@@ -389,8 +391,6 @@ sub save_epub
     foreach (@{$moo->{files}}) {
         $zip->addFile(catfile($moo->{book_id}, "OEBPS", $_), catfile("OEBPS", $_));
     }
-
-    $zip->addFile(catfile($moo->{book_id}, "mimetype"), "mimetype");
 
     unless ($zip->writeToFileNamed($filename) == AZ_OK) {
         die "Cannot write EPUB to ebook.epub: $!";

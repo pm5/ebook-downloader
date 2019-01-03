@@ -241,6 +241,8 @@ sub save_epub
     my $moo = shift;
     my $zip = Archive::Zip->new;
 
+    $zip->addFile(catfile($moo->{book_id}, "mimetype"), "mimetype");
+
     foreach (keys %{$moo->{content}}) {
         $zip->addFile(catfile($moo->{book_id}, $_), $_);
     }
@@ -248,8 +250,6 @@ sub save_epub
     foreach (@{$moo->{files}}) {
         $zip->addFile(catfile($moo->{book_id}, "OEBPS", $_), catfile("OEBPS", $_));
     }
-
-    $zip->addFile(catfile($moo->{book_id}, "mimetype"), "mimetype");
 
     unless ($zip->writeToFileNamed("ebook.epub") == AZ_OK) {
         die "Cannot write EPUB to ebook.epub: $!";
