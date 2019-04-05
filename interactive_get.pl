@@ -243,7 +243,7 @@ sub set_cookie
 sub set_build_dir
 {
     my ($moo, $build_dir) = @_;
-    return { %$moo, build_dir => $build_dir };
+    return { %$moo, build_dir => "tmp/$build_dir" };
 }
 
 sub parse_nav
@@ -361,7 +361,7 @@ sub save_files
 sub save_mimetype
 {
     my $moo = shift;
-    open my $fh, ">", $moo->{book_id} . "/mimetype"
+    open my $fh, ">", "tmp/$moo->{book_id}/mimetype"
         or die "Can't write to mimetype: $!";
     print $fh "application/epub+zip";
     close $fh;
@@ -375,21 +375,21 @@ sub save_epub
     my $bookname = $selection->{author} . "_" . $selection->{title};
     my $zip = Archive::Zip->new;
 
-    my $filename = "${bookname}.epub";
+    my $filename = "downloads/${bookname}.epub";
     if ($^O eq 'darwin') {
         require Encode::UTF8Mac;
         $Encode::Locale::ENCODING_LOCALE_FS = 'utf-8-mac';
     }
     $filename = Encode::decode('locale_fs', $filename);
 
-    $zip->addFile(catfile($moo->{book_id}, "mimetype"), "mimetype");
+    $zip->addFile(catfile("tmp/$moo->{book_id}", "mimetype"), "mimetype");
 
     foreach (keys %{$moo->{content}}) {
-        $zip->addFile(catfile($moo->{book_id}, $_), $_);
+        $zip->addFile(catfile("tmp/$moo->{book_id}", $_), $_);
     }
 
     foreach (@{$moo->{files}}) {
-        $zip->addFile(catfile($moo->{book_id}, "OEBPS", $_), catfile("OEBPS", $_));
+        $zip->addFile(catfile("tmp/$moo->{book_id}", "OEBPS", $_), catfile("OEBPS", $_));
     }
 
     unless ($zip->writeToFileNamed($filename) == AZ_OK) {
