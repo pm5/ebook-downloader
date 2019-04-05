@@ -8,11 +8,14 @@ Download your Readmoo ebooks as EPUB files.
 
 You can skip the first three steps after the first time using the tool.
 
-1. Make sure you have a modern version of Perl or install one with [Perlbrew](https://perlbrew.pl/).
-2. Make sure you have [cpanm](https://metacpan.org/pod/distribution/App-cpanminus/lib/App/cpanminus/fatscript.pm) and [carton](https://metacpan.org/pod/distribution/Carton/script/carton) installed.
+1. Make sure you have a modern version, say >= 5.24, of Perl.  You can install one with [Perlbrew](https://perlbrew.pl/).
+2. Make sure you have [cpanm](https://metacpan.org/pod/distribution/App-cpanminus/lib/App/cpanminus/fatscript.pm) and [carton](https://metacpan.org/pod/distribution/Carton/script/carton) installed:
+   ```
+   $ curl -L https://cpanmin.us | perl - App::cpanminus
+   $ cpanm Carton
+   ```
 3. Install dependencies with
    ```
-   $ eval $(perl -Mlocal::lib=./local)
    $ carton
    ```
 4. Setup Perl running environment variables with
