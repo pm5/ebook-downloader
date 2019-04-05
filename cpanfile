@@ -7,3 +7,4 @@ requires "Term::ReadKey";
 requires "Scalar::Util";
 requires "Encode::UTF8Mac";
 requires "LWP::Protocol::https";
+requires "JSON";
