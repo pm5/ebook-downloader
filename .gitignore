@@ -37,3 +37,8 @@ inc/
 /*.zip
 
 local/
+
+# folders for downloading
+/tmp
+/downloads
+
