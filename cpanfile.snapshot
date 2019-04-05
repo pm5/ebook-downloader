@@ -271,6 +271,22 @@ DISTRIBUTIONS
       Encode 2.10
       Exporter 5.57
       ExtUtils::MakeMaker 6.30
+  IO-Socket-SSL-2.066
+    pathname: S/SU/SULLR/IO-Socket-SSL-2.066.tar.gz
+    provides:
+      IO::Socket::SSL 2.066
+      IO::Socket::SSL::Intercept 2.056
+      IO::Socket::SSL::OCSP_Cache 2.066
+      IO::Socket::SSL::OCSP_Resolver 2.066
+      IO::Socket::SSL::PublicSuffix undef
+      IO::Socket::SSL::SSL_Context 2.066
+      IO::Socket::SSL::SSL_HANDLE 2.066
+      IO::Socket::SSL::Session_Cache 2.066
+      IO::Socket::SSL::Utils 2.014
+    requirements:
+      ExtUtils::MakeMaker 0
+      Net::SSLeay 1.46
+      Scalar::Util 0
   JSON-4.02
     pathname: I/IS/ISHIGAKI/JSON-4.02.tar.gz
     provides:
@@ -513,6 +529,14 @@ DISTRIBUTIONS
       List::Util 1.41
       Time::Local 1.2
       perl 5.010001
+  Mozilla-CA-20180117
+    pathname: A/AB/ABH/Mozilla-CA-20180117.tar.gz
+    provides:
+      Mozilla::CA 20180117
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test 0
+      perl 5.006
   Net-HTTP-6.18
     pathname: O/OA/OALDERS/Net-HTTP-6.18.tar.gz
     provides:
@@ -532,6 +556,16 @@ DISTRIBUTIONS
       strict 0
       vars 0
       warnings 0
+  Net-SSLeay-1.85
+    pathname: M/MI/MIKEM/Net-SSLeay-1.85.tar.gz
+    provides:
+      Net::SSLeay 1.85
+      Net::SSLeay::Handle 0.61
+    requirements:
+      ExtUtils::MakeMaker 6.36
+      MIME::Base64 0
+      Test::More 0.60_01
+      perl 5.005
   TermReadKey-2.38
     pathname: J/JS/JSTOWE/TermReadKey-2.38.tar.gz
     provides:
@@ -548,15 +582,6 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::Builder 0
       Try::Tiny 0.07
-      strict 0
-      warnings 0
-  Test-RequiresInternet-0.05
-    pathname: M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz
-    provides:
-      Test::RequiresInternet 0.05
-    requirements:
-      ExtUtils::MakeMaker 0
-      Socket 0
       strict 0
       warnings 0
   Try-Tiny-0.30
@@ -810,7 +835,7 @@ DISTRIBUTIONS
       HTTP::Request 6
       HTTP::Request::Common 6
       HTTP::Response 6
-      HTTP::Status 6.18
+      HTTP::Status 6
       IO::Select 0
       IO::Socket 0
       LWP::MediaTypes 6
