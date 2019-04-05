@@ -30,64 +30,30 @@ DISTRIBUTIONS
       IO::Seekable 0
       Time::Local 0
       perl 5.006
-  Devel-CheckCompiler-0.07
-    pathname: S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz
+  Encode-Locale-1.05
+    pathname: G/GA/GAAS/Encode-Locale-1.05.tar.gz
     provides:
-      Devel::AssertC99 undef
-      Devel::CheckCompiler 0.07
+      Encode::Locale 1.05
     requirements:
+      Encode 2
+      Encode::Alias 0
+      ExtUtils::MakeMaker 0
+      perl 5.008
+  Encode-UTF8Mac-0.04
+    pathname: T/TO/TOMITA/Encode-UTF8Mac-0.04.tar.gz
+    provides:
+      Encode::UTF8Mac 0.04
+      Unicode::Normalize::Mac undef
+    requirements:
+      CPAN::Meta 0
+      CPAN::Meta::Prereqs 0
+      Encode 0
       Exporter 0
       ExtUtils::CBuilder 0
-      File::Temp 0
-      Module::Build::Tiny 0.035
-      Test::More 0.98
-      parent 0
+      ExtUtils::MakeMaker 6.59
+      Module::Build 0.38
+      Unicode::Normalize 0
       perl 5.008001
-  Devel-PPPort-3.43
-    pathname: X/XS/XSAWYERX/Devel-PPPort-3.43.tar.gz
-    provides:
-      Devel::PPPort 3.43
-    requirements:
-      ExtUtils::MakeMaker 0
-  EPUB-Parser-0.07
-    pathname: T/TO/TOKUBASS/EPUB-Parser-0.07.tar.gz
-    provides:
-      EPUB::Parser 0.07
-      EPUB::Parser::File::Container undef
-      EPUB::Parser::File::Document undef
-      EPUB::Parser::File::Navi undef
-      EPUB::Parser::File::Navi::Context undef
-      EPUB::Parser::File::Navi::Context::Toc undef
-      EPUB::Parser::File::OPF undef
-      EPUB::Parser::File::OPF::Context undef
-      EPUB::Parser::File::OPF::Context::Guide undef
-      EPUB::Parser::File::OPF::Context::Manifest undef
-      EPUB::Parser::File::OPF::Context::Metadata undef
-      EPUB::Parser::File::OPF::Context::Spine undef
-      EPUB::Parser::File::Parser undef
-      EPUB::Parser::File::Parser::Container undef
-      EPUB::Parser::File::Parser::Document undef
-      EPUB::Parser::File::Parser::Navi undef
-      EPUB::Parser::File::Parser::OPF undef
-      EPUB::Parser::Manager::Pages undef
-      EPUB::Parser::Util::Archive undef
-      EPUB::Parser::Util::Archive::Iterator undef
-      EPUB::Parser::Util::AttributePacker undef
-      EPUB::Parser::Util::Context undef
-      EPUB::Parser::Util::EpubLoad undef
-      EPUB::Parser::Util::ShortcutMethod undef
-    requirements:
-      Archive::Zip 0
-      Carp 0
-      File::Slurp 0
-      IO::String 0
-      Module::Build::Tiny 0.035
-      Smart::Args 0
-      URI 0
-      XML::LibXML 0
-      XML::LibXML::XPathContext 0
-      parent 0
-      perl 5.008005
   ExtUtils-Config-0.008
     pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
     provides:
@@ -127,26 +93,196 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  File-Slurp-9999.25
-    pathname: C/CA/CAPOEIRAB/File-Slurp-9999.25.tar.gz
+  File-Listing-6.04
+    pathname: G/GA/GAAS/File-Listing-6.04.tar.gz
     provides:
-      File::Slurp 9999.25
+      File::Listing 6.04
+      File::Listing::apache 6.04
+      File::Listing::dosftp 6.04
+      File::Listing::netware 6.04
+      File::Listing::unix 6.04
+      File::Listing::vms 6.04
     requirements:
-      B 0
-      Carp 0
-      Errno 0
-      Exporter 5.57
       ExtUtils::MakeMaker 0
-      Fcntl 0
-      POSIX 0
+      HTTP::Date 6
+      perl 5.006002
+  HTML-Form-6.04
+    pathname: O/OA/OALDERS/HTML-Form-6.04.tar.gz
+    provides:
+      HTML::Form 6.04
+      HTML::Form::FileInput 6.04
+      HTML::Form::IgnoreInput 6.04
+      HTML::Form::ImageInput 6.04
+      HTML::Form::Input 6.04
+      HTML::Form::KeygenInput 6.04
+      HTML::Form::ListInput 6.04
+      HTML::Form::SubmitInput 6.04
+      HTML::Form::TextInput 6.04
+    requirements:
+      Carp 0
+      Encode 2
+      ExtUtils::MakeMaker 0
+      HTML::TokeParser 0
+      HTTP::Request 6
+      HTTP::Request::Common 6.03
+      URI 1.10
+      perl 5.008001
+      strict 0
+      vars 0
+  HTML-Parser-3.72
+    pathname: G/GA/GAAS/HTML-Parser-3.72.tar.gz
+    provides:
+      HTML::Entities 3.69
+      HTML::Filter 3.72
+      HTML::HeadParser 3.71
+      HTML::LinkExtor 3.69
+      HTML::Parser 3.72
+      HTML::PullParser 3.57
+      HTML::TokeParser 3.69
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTML::Tagset 3
+      XSLoader 0
+      perl 5.008
+  HTML-Tagset-3.20
+    pathname: P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz
+    provides:
+      HTML::Tagset 3.20
+    requirements:
+      ExtUtils::MakeMaker 0
+  HTML-Tree-5.07
+    pathname: K/KE/KENTNL/HTML-Tree-5.07.tar.gz
+    provides:
+      HTML::AsSubs 5.07
+      HTML::Element 5.07
+      HTML::Element::traverse 5.07
+      HTML::Parse 5.07
+      HTML::Tree 5.07
+      HTML::TreeBuilder 5.07
+    requirements:
+      Carp 0
+      Encode 0
+      Exporter 0
+      HTML::Entities 0
+      HTML::Parser 3.46
+      HTML::Tagset 3.02
+      Module::Build 0.2808
+      Scalar::Util 0
+      Test::Fatal 0
+      Test::More 0
+      base 0
+      integer 0
+      perl 5.008
+  HTTP-Cookies-6.04
+    pathname: O/OA/OALDERS/HTTP-Cookies-6.04.tar.gz
+    provides:
+      HTTP::Cookies 6.04
+      HTTP::Cookies::Microsoft 6.04
+      HTTP::Cookies::Netscape 6.04
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      HTTP::Headers::Util 6
+      HTTP::Request 0
+      Time::Local 0
+      locale 0
+      perl 5.008001
+      strict 0
+      vars 0
+  HTTP-Daemon-6.04
+    pathname: O/OA/OALDERS/HTTP-Daemon-6.04.tar.gz
+    provides:
+      HTTP::Daemon 6.04
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      HTTP::Request 6
+      HTTP::Response 6
+      HTTP::Status 6
+      IO::Socket 0
+      LWP::MediaTypes 6
+      Module::Build::Tiny 0.034
+      Sys::Hostname 0
+      perl 5.006
       strict 0
       warnings 0
-  IO-String-1.08
-    pathname: G/GA/GAAS/IO-String-1.08.tar.gz
+  HTTP-Date-6.02
+    pathname: G/GA/GAAS/HTTP-Date-6.02.tar.gz
     provides:
-      IO::String 1.08
+      HTTP::Date 6.02
     requirements:
       ExtUtils::MakeMaker 0
+      Time::Local 0
+      perl 5.006002
+  HTTP-Message-6.18
+    pathname: O/OA/OALDERS/HTTP-Message-6.18.tar.gz
+    provides:
+      HTTP::Config 6.18
+      HTTP::Headers 6.18
+      HTTP::Headers::Auth 6.18
+      HTTP::Headers::ETag 6.18
+      HTTP::Headers::Util 6.18
+      HTTP::Message 6.18
+      HTTP::Request 6.18
+      HTTP::Request::Common 6.18
+      HTTP::Response 6.18
+      HTTP::Status 6.18
+    requirements:
+      Carp 0
+      Compress::Raw::Zlib 0
+      Encode 2.21
+      Encode::Locale 1
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      IO::Compress::Bzip2 2.021
+      IO::Compress::Deflate 0
+      IO::Compress::Gzip 0
+      IO::HTML 0
+      IO::Uncompress::Bunzip2 2.021
+      IO::Uncompress::Gunzip 0
+      IO::Uncompress::Inflate 0
+      IO::Uncompress::RawInflate 0
+      LWP::MediaTypes 6
+      MIME::Base64 2.1
+      MIME::QuotedPrint 0
+      Storable 0
+      URI 1.10
+      base 0
+      perl 5.008001
+      strict 0
+      warnings 0
+  HTTP-Negotiate-6.01
+    pathname: G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz
+    provides:
+      HTTP::Negotiate 6.01
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTTP::Headers 6
+      perl 5.008001
+  IO-HTML-1.001
+    pathname: C/CJ/CJM/IO-HTML-1.001.tar.gz
+    provides:
+      IO::HTML 1.001
+    requirements:
+      Carp 0
+      Encode 2.10
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.30
+  LWP-MediaTypes-6.04
+    pathname: O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
+    provides:
+      LWP::MediaTypes 6.04
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      Scalar::Util 0
+      perl 5.006002
+      strict 0
   Module-Build-0.4224
     pathname: L/LE/LEONT/Module-Build-0.4224.tar.gz
     provides:
@@ -222,21 +358,6 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Module-Build-XSUtil-0.19
-    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.19.tar.gz
-    provides:
-      Module::Build::XSUtil 0.19
-    requirements:
-      Devel::CheckCompiler 0
-      Devel::PPPort 0
-      Exporter 0
-      ExtUtils::CBuilder 0
-      File::Basename 0
-      File::Path 0
-      Module::Build 0.4005
-      XSLoader 0
-      parent 0
-      perl 5.008001
   Mojolicious-8.10
     pathname: S/SR/SRI/Mojolicious-8.10.tar.gz
     provides:
@@ -330,7 +451,6 @@ DISTRIBUTIONS
       Mojolicious::Lite undef
       Mojolicious::Plugin undef
       Mojolicious::Plugin::Config undef
-      Mojolicious::Plugin::Config::Sandbox undef
       Mojolicious::Plugin::DefaultHelpers undef
       Mojolicious::Plugin::EPLRenderer undef
       Mojolicious::Plugin::EPRenderer undef
@@ -359,63 +479,55 @@ DISTRIBUTIONS
       List::Util 1.41
       Time::Local 1.2
       perl 5.010001
-  Mouse-v2.5.6
-    pathname: S/SK/SKAJI/Mouse-v2.5.6.tar.gz
+  Net-HTTP-6.18
+    pathname: O/OA/OALDERS/Net-HTTP-6.18.tar.gz
     provides:
-      Mouse v2.5.6
-      Mouse::Exporter undef
-      Mouse::Meta::Attribute undef
-      Mouse::Meta::Class undef
-      Mouse::Meta::Method undef
-      Mouse::Meta::Method::Accessor undef
-      Mouse::Meta::Method::Constructor undef
-      Mouse::Meta::Method::Delegation undef
-      Mouse::Meta::Method::Destructor undef
-      Mouse::Meta::Module undef
-      Mouse::Meta::Role undef
-      Mouse::Meta::Role::Application undef
-      Mouse::Meta::Role::Application::RoleSummation undef
-      Mouse::Meta::Role::Composite undef
-      Mouse::Meta::Role::Method undef
-      Mouse::Meta::TypeConstraint undef
-      Mouse::Object undef
-      Mouse::PurePerl undef
-      Mouse::Role v2.5.6
-      Mouse::Spec v2.5.6
-      Mouse::TypeRegistry undef
-      Mouse::Util v2.5.6
-      Mouse::Util::MetaRole undef
-      Mouse::Util::TypeConstraints undef
-      Squirrel undef
-      Squirrel::Role undef
-      Test::Mouse undef
-      ouse undef
+      Net::HTTP 6.18
+      Net::HTTP::Methods 6.18
+      Net::HTTP::NB 6.18
+      Net::HTTPS 6.18
     requirements:
-      ExtUtils::CBuilder 0
-      Module::Build 0.4005
-      Module::Build::XSUtil 0.19
-      Scalar::Util 1.14
-      XSLoader 0.02
-      perl 5.008005
-  PadWalker-2.3
-    pathname: R/RO/ROBIN/PadWalker-2.3.tar.gz
-    provides:
-      PadWalker 2.3
-    requirements:
+      Carp 0
+      Compress::Raw::Zlib 0
       ExtUtils::MakeMaker 0
-      perl 5.008001
-  Smart-Args-0.14
-    pathname: T/TO/TOKUHIROM/Smart-Args-0.14.tar.gz
+      IO::Socket::INET 0
+      IO::Uncompress::Gunzip 0
+      URI 0
+      base 0
+      perl 5.006002
+      strict 0
+      vars 0
+      warnings 0
+  TermReadKey-2.38
+    pathname: J/JS/JSTOWE/TermReadKey-2.38.tar.gz
     provides:
-      Smart::Args 0.14
+      Term::ReadKey 2.38
     requirements:
-      Exporter 5.63
-      Module::Build::Tiny 0.035
-      Mouse 0.92
-      Mouse::Util::TypeConstraints 0
-      PadWalker 1.92
-      Scalar::Util 1.21
-      perl 5.008001
+      ExtUtils::MakeMaker 6.58
+  Test-Fatal-0.014
+    pathname: R/RJ/RJBS/Test-Fatal-0.014.tar.gz
+    provides:
+      Test::Fatal 0.014
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Test::Builder 0
+      Try::Tiny 0.07
+      strict 0
+      warnings 0
+  Try-Tiny-0.30
+    pathname: E/ET/ETHER/Try-Tiny-0.30.tar.gz
+    provides:
+      Try::Tiny 0.30
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
   URI-1.74
     pathname: E/ET/ETHER/URI-1.74.tar.gz
     provides:
@@ -480,6 +592,45 @@ DISTRIBUTIONS
       strict 0
       utf8 0
       warnings 0
+  WWW-Mechanize-1.91
+    pathname: O/OA/OALDERS/WWW-Mechanize-1.91.tar.gz
+    provides:
+      WWW::Mechanize 1.91
+      WWW::Mechanize::Image 1.91
+      WWW::Mechanize::Link 1.91
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      Getopt::Long 0
+      HTML::Form 1.00
+      HTML::HeadParser 0
+      HTML::TokeParser 0
+      HTML::TreeBuilder 5
+      HTTP::Cookies 0
+      HTTP::Request 1.30
+      HTTP::Request::Common 0
+      LWP::UserAgent 5.827
+      Pod::Usage 0
+      Scalar::Util 1.14
+      Tie::RefHash 0
+      URI::URL 0
+      URI::file 0
+      base 0
+      perl 5.006
+      strict 0
+      warnings 0
+  WWW-RobotRules-6.02
+    pathname: G/GA/GAAS/WWW-RobotRules-6.02.tar.gz
+    provides:
+      WWW::RobotRules 6.02
+      WWW::RobotRules::AnyDBM_File 6.00
+      WWW::RobotRules::InCore 6.02
+    requirements:
+      AnyDBM_File 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      URI 1.10
+      perl 5.008001
   XML-LibXML-2.0132
     pathname: S/SH/SHLOMIF/XML-LibXML-2.0132.tar.gz
     provides:
@@ -571,3 +722,65 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008
+  libwww-perl-6.38
+    pathname: O/OA/OALDERS/libwww-perl-6.38.tar.gz
+    provides:
+      LWP 6.38
+      LWP::Authen::Basic 6.38
+      LWP::Authen::Digest 6.38
+      LWP::Authen::Ntlm 6.38
+      LWP::ConnCache 6.38
+      LWP::Debug 6.38
+      LWP::Debug::TraceHTTP 6.38
+      LWP::DebugFile 6.38
+      LWP::MemberMixin 6.38
+      LWP::Protocol 6.38
+      LWP::Protocol::cpan 6.38
+      LWP::Protocol::data 6.38
+      LWP::Protocol::file 6.38
+      LWP::Protocol::ftp 6.38
+      LWP::Protocol::gopher 6.38
+      LWP::Protocol::http 6.38
+      LWP::Protocol::loopback 6.38
+      LWP::Protocol::mailto 6.38
+      LWP::Protocol::nntp 6.38
+      LWP::Protocol::nogo 6.38
+      LWP::RobotUA 6.38
+      LWP::Simple 6.38
+      LWP::UserAgent 6.38
+      libwww::perl undef
+    requirements:
+      CPAN::Meta::Requirements 2.120620
+      Digest::MD5 0
+      Encode 2.12
+      Encode::Locale 0
+      ExtUtils::MakeMaker 0
+      File::Copy 0
+      File::Listing 6
+      Getopt::Long 0
+      HTML::Entities 0
+      HTML::HeadParser 0
+      HTTP::Cookies 6
+      HTTP::Daemon 6
+      HTTP::Date 6
+      HTTP::Negotiate 6
+      HTTP::Request 6
+      HTTP::Request::Common 6
+      HTTP::Response 6
+      HTTP::Status 6.18
+      IO::Select 0
+      IO::Socket 0
+      LWP::MediaTypes 6
+      MIME::Base64 2.1
+      Module::Metadata 0
+      Net::FTP 2.58
+      Net::HTTP 6.18
+      Scalar::Util 0
+      Try::Tiny 0
+      URI 1.10
+      URI::Escape 0
+      WWW::RobotRules 6
+      base 0
+      perl 5.008001
+      strict 0
+      warnings 0
