@@ -16,7 +16,7 @@ You can skip the first three steps after the first time using the tool.
    ```
 3. Install dependencies with
    ```
-   $ carton
+   $ carton install --deployment
    ```
 4. Setup Perl running environment variables with
    ```
