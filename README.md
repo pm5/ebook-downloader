@@ -4,31 +4,42 @@ Ebook Download
 
 Download your Readmoo ebooks as EPUB files.
 
-## Usage
+## Installation
 
-You can skip the first three steps after the first time using the tool.
+1. Make sure you have a modern version, say >= 5.24, of Perl.  You can install one with [Perlbrew](https://perlbrew.pl/):
 
-1. Make sure you have a modern version, say >= 5.24, of Perl.  You can install one with [Perlbrew](https://perlbrew.pl/).
-2. Make sure you have [cpanm](https://metacpan.org/pod/distribution/App-cpanminus/lib/App/cpanminus/fatscript.pm) and [carton](https://metacpan.org/pod/distribution/Carton/script/carton) installed:
+   ```sh
+   $ curl -L https://install.perlbrew.pl | bash
+   $ perlbrew install 5.24.3	# or anything >= 5.24.0
    ```
+
+   
+
+2. Make sure you have [cpanm](https://metacpan.org/pod/distribution/App-cpanminus/lib/App/cpanminus/fatscript.pm) and [carton](https://metacpan.org/pod/distribution/Carton/script/carton) installed.  Perlbrew installs cpanm for you.  If you do not have one, install it with:
+   ```sh
    $ curl -L https://cpanmin.us | perl - App::cpanminus
+   ```
+   Install carton with:
+   ```sh
    $ cpanm Carton
    ```
-3. Install dependencies with
-   ```
+
+3. Under the project directory, install dependencies with
+   ```sh
    $ carton install --deployment
    ```
-4. Setup Perl running environment variables with
-   ```
-   $ eval $(perl -Mlocal::lib=./local)
-   ```
-5. Run interactive script
-   ```
-   $ interactive_get.pl
-   Readmoo account: <your_email@your_email_provider>
-   Readmoo password:
-   ```
-   If everything goes well, it will list all ebooks in your Readmoo library.  Select the ebook you want to download by its number and press ENTER to start downloading.  Type `q` and press ENTER to quit the program.
+
+## Usage
+
+Run the interactive script:
+
+ ```sh
+ $ interactive_get.pl
+ Readmoo account: <your_email@your_email_provider>
+ Readmoo password:
+ ```
+
+ If everything goes well, it will list all ebooks in your Readmoo library.  Select the ebook you want to download by its number and press ENTER to start downloading.  Type `q` and press ENTER to quit the program.
 
 ## License
 

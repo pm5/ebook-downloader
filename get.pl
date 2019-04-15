@@ -27,7 +27,11 @@ Readmoo's eBook reader roughly works in the following way:
 
 =cut
 
-use Modern::Perl;
+use strict;
+use warnings;
+use v5.10;
+use FindBin;
+use lib "$FindBin::Bin/local/lib/perl5";
 use Mojo::UserAgent;
 use JSON qw/from_json/;
 use XML::LibXML;

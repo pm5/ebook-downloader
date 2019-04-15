@@ -1,7 +1,11 @@
-#!/usr/bin/env perl
+#!/usr/bin/env perl -w
 
 use strict;
 use warnings;
+use v5.10;
+
+use FindBin;
+use lib "$FindBin::Bin/local/lib/perl5";
 
 use Encode;
 use Encode::Locale;
@@ -10,7 +14,6 @@ use JSON qw/from_json/;
 use Scalar::Util qw/looks_like_number/;
 use Term::ReadKey;
 use WWW::Mechanize;
-use Modern::Perl;
 use Mojo::UserAgent;
 use JSON qw/from_json/;
 use XML::LibXML;
