@@ -319,20 +319,6 @@ DISTRIBUTIONS
       Mozilla::CA 20110101
       Net::HTTPS 6
       perl 5.008001
-  Modern-Perl-1.20181021
-    pathname: C/CH/CHROMATIC/Modern-Perl-1.20181021.tar.gz
-    provides:
-      Modern::Perl 1.20181021
-    requirements:
-      ExtUtils::MakeMaker 0
-      IO::File 0
-      IO::Handle 0
-      autodie 2.22
-      feature 0
-      mro 0
-      perl 5.010
-      strict 0
-      warnings 0
   Module-Build-0.4224
     pathname: L/LE/LEONT/Module-Build-0.4224.tar.gz
     provides:
