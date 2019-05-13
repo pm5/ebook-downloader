@@ -21,20 +21,7 @@ use File::Basename qw/dirname/;
 use File::Spec::Functions;
 use Data::Dumper;
 use Archive::Zip qw/:ERROR_CODES/;
-
-sub config
-{
-    return {
-        debug => 0,
-        ua => Mojo::UserAgent->new,
-        user_agent => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:53.0) Gecko/20100101 Firefox/53.0",
-        reader_base_url => "https://reader.readmoo.com",
-        new_read_base_url => "https://new-read.readmoo.com/mooreader",
-        api_base_url => "https://api.readmoo.com/books",
-        files => [],
-        content => {},
-    };
-}
+use EBook::Downloader::Store::Readmoo;
 
 sub prepare_mech
 {
@@ -402,7 +389,7 @@ sub save_epub
     $moo;
 }
 
-my $moo = config();
+my $moo = EBook::Downloader::Store::Readmoo::config;
 $moo = prepare_mech($moo);
 $moo = get_user_password($moo);
 $moo = login($moo);

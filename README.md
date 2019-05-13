@@ -13,7 +13,7 @@ Download your Readmoo ebooks as EPUB files.
    $ perlbrew install 5.24.3	# or anything >= 5.24.0
    ```
 
-   
+
 
 2. Make sure you have [cpanm](https://metacpan.org/pod/distribution/App-cpanminus/lib/App/cpanminus/fatscript.pm) and [carton](https://metacpan.org/pod/distribution/Carton/script/carton) installed.  Perlbrew installs cpanm for you.  If you do not have one, install it with:
    ```sh
@@ -31,15 +31,15 @@ Download your Readmoo ebooks as EPUB files.
 
 ## Usage
 
-Run the interactive script:
+Run the script:
 
  ```sh
- $ interactive_get.pl
+ $ ./run.sh
  Readmoo account: <your_email@your_email_provider>
- Readmoo password:
+ Readmoo password: ****
  ```
 
- If everything goes well, it will list all ebooks in your Readmoo library.  Select the ebook you want to download by its number and press ENTER to start downloading.  Type `q` and press ENTER to quit the program.
+If everything went well, it will list all ebooks in your Readmoo library.  Select the ebook you want to download by its number and press ENTER to start downloading.  Type `q` and press ENTER to quit the program.
 
 ## License
 
