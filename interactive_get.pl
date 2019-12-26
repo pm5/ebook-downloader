@@ -363,6 +363,7 @@ sub save_epub
     my $moo = shift;
     my $selection = $moo->{selection};
     my $bookname = $selection->{author} . "_" . $selection->{title};
+    $bookname =~ s{/+}{ }g;
     my $zip = Archive::Zip->new;
 
     my $filename = "downloads/${bookname}.epub";
